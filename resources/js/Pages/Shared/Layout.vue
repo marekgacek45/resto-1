@@ -1,14 +1,14 @@
 <template>
     <main class="flex justify-between h-[96vh] min-w-full gap-4" style=" height: calc(100vh - 32px);">
         <div
-            class=" 0 w-9/12 h-full flex flex-col items-start justify-between rounded-2xl relative" style="background-image: url(https://images.unsplash.com/photo-1595295333158-4742f28fbd85?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);background-position: center;background-size: cover;background-repeat: no-repeat;"
+            class=" 0 w-9/12 h-full flex flex-col items-start justify-between rounded-2xl relative"  :style="`background-image: url('${img}'); background-position: center; background-size: cover; background-repeat: no-repeat;`"
         >
-            <Navbar class="mt-14 ml-12" />
+            <Navbar class="mt-12 ml-12" />
 
-            <div class="mb-12 ml-24">
-                <h1 class="bottom-36 font-heading text-9xl text-fontLight">{{ title }}</h1>
+            <div class="mb-7 ml-14">
+                <h1 class="bottom-36 font-heading text-9xl text-black">{{ title }}</h1>
             </div>
-            <div class=" p-4 rounded-ee-lg absolute right-0 bottom-0 flex space-x-2">
+            <div class=" px-4 py-2  absolute right-2 bottom-2 flex space-x-2 bg-black rounded-2xl">
                 <div class="bg-white rounded-full p-2">
                     <svg fill="#1C2033" width="16" height="16" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M36.2008 63.8002H28.4008C26.4008 63.8002 24.8008 62.1002 24.8008 60.0002V36.2002H18.4008C16.4008 36.2002 14.8008 34.5002 14.8008 32.4002V25.5002C14.8008 23.4002 16.4008 21.7002 18.4008 21.7002H24.6008V15.4002C24.6008 6.30019 30.0008 0.200195 38.0008 0.200195H44.0008C46.0008 0.200195 47.6008 1.9002 47.6008 4.0002V12.1002C47.6008 14.2002 46.0008 15.9002 44.0008 15.9002H39.9008C39.8008 15.9002 39.8008 15.9002 39.7008 15.9002C39.7008 16.0002 39.7008 16.1002 39.7008 16.2002V21.6002H45.4008C46.6008 21.7002 47.6008 22.2002 48.3008 23.0002C49.0008 23.9002 49.3008 25.1002 49.1008 26.2002L47.9008 33.0002C47.7008 34.8002 46.2008 36.1002 44.3008 36.1002H39.7008V60.0002C39.7008 62.0002 38.1008 63.8002 36.2008 63.8002ZM26.5008 32.7002C27.5008 32.7002 28.3008 33.5002 28.3008 34.5002V60.0002C28.3008 60.2002 28.4008 60.3002 28.4008 60.3002H36.2008C36.2008 60.3002 36.3008 60.2002 36.3008 60.0002V34.3002C36.3008 33.3002 37.1008 32.5002 38.1008 32.5002H44.4008C44.4008 32.5002 44.5008 32.5002 44.5008 32.4002V32.3002L45.7008 25.6002C45.7008 25.4002 45.7008 25.3002 45.6008 25.2002C45.6008 25.2002 45.5008 25.1002 45.4008 25.1002H38.0008C37.0008 25.1002 36.2008 24.3002 36.2008 23.3002V16.2002C36.2008 14.4002 36.5008 12.4002 39.9008 12.4002H44.0008C44.0008 12.4002 44.1008 12.3002 44.1008 12.1002V4.1002C44.1008 3.9002 44.0008 3.8002 44.0008 3.8002H38.1008C32.1008 3.8002 28.2008 8.4002 28.2008 15.5002V23.6002C28.2008 24.6002 27.4008 25.4002 26.4008 25.4002H18.4008C18.4008 25.4002 18.3008 25.5002 18.3008 25.7002V32.6002C18.3008 32.8002 18.4008 32.9002 18.4008 32.9002L26.5008 32.7002Z"/></svg>
                 </div>
@@ -31,5 +31,6 @@ import Navbar from "./Navigation/Navbar.vue";
 
 defineProps({
     title: String,
+    img:String
 });
 </script>
