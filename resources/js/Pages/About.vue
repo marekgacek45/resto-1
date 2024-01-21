@@ -1,5 +1,7 @@
 <template>
-    <p>O nas</p>
+    <Layout :title="'O nas'">
+        <p>o nas</p>
+    </Layout>
 </template>
 
 
@@ -7,8 +9,6 @@
 
 import Layout from './Shared/Layout.vue';
 
-defineOptions({
-    layout:Layout
-})
+
 
 </script>

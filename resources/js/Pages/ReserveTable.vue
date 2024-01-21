@@ -1,5 +1,7 @@
 <template>
-    <p>Rezerwacja</p>
+    <Layout :title="'rezerwacja'">
+        <p>Rezerwacja</p>
+    </Layout>
 </template>
 
 
@@ -7,8 +9,6 @@
 
 import Layout from './Shared/Layout.vue';
 
-defineOptions({
-    layout:Layout
-})
+
 
 </script>
