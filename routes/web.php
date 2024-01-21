@@ -36,3 +36,18 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+
+Route::get('/',function () {
+    return inertia('Index');
+});
+Route::get('/menu',function () {
+    return inertia('Menu');
+});
+Route::get('/o-nas',function () {
+    return inertia('About');
+});
+Route::get('/rezerwacja',function () {
+    return inertia('ReserveTable');
+});
