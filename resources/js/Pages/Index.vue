@@ -1,9 +1,9 @@
 <template>
-    <Layout :title="'strona główna'" :img="'assets/images/dish.jpg'">
+    <Layout :title="''" :img="'assets/images/dish.jpg'">
     
-<HomeCard :title="'Menu'" :img="'assets/images/main-small.jpg'"/>
-<HomeCard :title="'Rezerwacja'" :img="'assets/images/reservation.jpg'"/>
-<HomeCard :title="'Restauracja'" :img="'assets/images/restaurant.jpg'"/>
+<HomeCard :href="'/menu'" :title="'Menu'" :img="'assets/images/main-small.jpg'"/>
+<HomeCard :href="'/rezerwacja'" :title="'Rezerwacja'" :img="'assets/images/reservation.jpg'"/>
+<HomeCard :href="'/o-nas'" :title="'Restauracja'" :img="'assets/images/restaurant.jpg'"/>
       
        
     </Layout>
@@ -12,6 +12,7 @@
 <script setup>
 import Layout from "./Shared/Layout.vue";
 import HomeCard from "@/Components/HomeCard.vue";
+
 
 
 
