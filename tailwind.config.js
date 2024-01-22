@@ -18,6 +18,9 @@ export default {
             },
             colors:{
                 fontLight:'#efe7d2'
+            },
+            screens:{
+                'xs': '350px',
             }
         },
     },
