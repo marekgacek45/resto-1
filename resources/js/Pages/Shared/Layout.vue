@@ -18,12 +18,14 @@
             <slot></slot>
         </div>
     </main>
+    <Footer></Footer>
 </template>
 
 <script setup>
 import SocialIcon from "@/Components/SocialIcon.vue";
 import Navbar from "./Navigation/Navbar.vue";
 import SocialBox from "@/Components/SocialBox.vue";
+import Footer from "./Footer.vue";
 
 defineProps({
     title: String,
