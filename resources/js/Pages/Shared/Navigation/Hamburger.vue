@@ -1,8 +1,11 @@
 <template>
-    <div class="hamburger"  @click="toggle">
-        <div class="bar1"></div>
+    <div
+        class="hamburger border border-primaryColor border-opacity-50 rounded-lg px-2 py-1 group hover:bg-primaryColor hover:bg-opacity-15 transition-colors"
+        @click="toggle"
+    >
+        <div class="bar1 group-hover:translate-y-1"></div>
         <div class="bar2"></div>
-        <div class="bar3"></div>
+        <div class="bar3 group-hover:-translate-y-1"></div>
     </div>
 </template>
 
@@ -25,24 +28,18 @@ export default {
 .bar1,
 .bar2,
 .bar3 {
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+    @apply bg-primaryColor w-5 duration-300;
+    height: 1px;
+    margin: 5px 0;
 }
 
-/* Rotate first bar */
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
-
-/* Fade out the second bar */
 .change .bar2 {
     opacity: 0;
 }
 
-/* Rotate last bar */
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }

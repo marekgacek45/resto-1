@@ -13,8 +13,8 @@
 
             <div class=" mb-16 sm:mb-7 sm:ml-14 text-center sm:text-start w-full ">
                 <!-- <h1 class="bottom-36 font-heading text-9xl text-black ">{{ title }}</h1> -->
-                <h1 class="bottom-36 font-heading text-6xl sm:text-8xl lg:text-9xl text-black ">
-                    Modern <br />Bistro Loft
+                <h1 class="bottom-36 font-heading text-6xl sm:text-8xl lg:text-9xl text-black uppercase">
+                    Craft <br />Culinary
                 </h1>
             </div>
             <SocialBox></SocialBox>

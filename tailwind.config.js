@@ -17,7 +17,9 @@ export default {
                 heading: ["Forum", "serif"],
             },
             colors:{
-                fontLight:'#efe7d2'
+                fontLight:'#efe7d2',
+                bgDark:'#0a0b0a',
+                primaryColor:'#efe7d2',
             },
             screens:{
                 'xs': '350px',
