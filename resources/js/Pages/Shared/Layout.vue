@@ -3,7 +3,7 @@
      style=" height: calc(100vh - 32px);"
      > -->
     <main
-        class="flex flex-col lg:flex-row justify-between lg:h-[96vh] min-w-full gap-4 "
+        class="flex flex-col lg:flex-row justify-between lg:h-[96vh] min-w-full gap-4 relative"
     >
         <div
             class="lg:w-9/12 h-[96vh] lg:h-[full] flex flex-col items-start justify-between rounded-2xl relative"
