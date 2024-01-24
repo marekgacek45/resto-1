@@ -1,35 +1,37 @@
 <template>
-    <!-- <main class="flex flex-col lg:flex-row justify-between lg:h-[96vh] min-w-full gap-4"
-     style=" height: calc(100vh - 32px);"
-     > -->
     <main
-        class="flex flex-col lg:flex-row justify-between lg:h-[96vh] min-w-full gap-4 relative"
+        class="relative flex flex-col lg:flex-row justify-between gap-4 lg:h-[96vh] min-w-full"
     >
         <div
-            class="lg:w-9/12 h-[96vh] lg:h-[full] flex flex-col items-start justify-between rounded-2xl relative"
-            :style="`background-image: url('${img}'); background-position: center; background-size: cover; background-repeat: no-repeat;`"
+            class="relative flex flex-col items-start justify-between lg:w-9/12 h-[96vh] lg:h-[full] rounded-2xl bg-cover bg-center bg-no-repeat"
+            :style="`background-image: url('${img}');`"
         >
-            <Navbar class="mt-12 ml-12" />
 
-            <div class=" mb-16 sm:mb-7 sm:ml-14 text-center sm:text-start w-full ">
-                <!-- <h1 class="bottom-36 font-heading text-9xl text-black ">{{ title }}</h1> -->
-                <h1 class="bottom-36 font-heading text-6xl sm:text-8xl lg:text-9xl text-black uppercase">
-                    Craft <br />Culinary
+       
+            <Navbar class="mt-12 sm:ml-12 mx-auto" />
+
+            <div
+                class="mb-16 sm:mb-7 sm:ml-14 text-center sm:text-start md:w-1/2"
+            >
+                
+                <h1
+                    class="bottom-36 font-heading font-semibold sm:font-medium text-7xl sm:text-8xl lg:text-9xl text-black uppercase"
+                >
+                    {{title}}
                 </h1>
             </div>
             <SocialBox></SocialBox>
         </div>
         <div
-            class="lg:w-3/12 rounded-2xl flex flex-col md:flex-row lg:flex-col"
+            class="flex flex-col md:flex-row lg:flex-col lg:w-3/12 rounded-2xl "
         >
             <slot></slot>
         </div>
     </main>
-    <Footer></Footer>
+    <Footer/>
 </template>
 
 <script setup>
-import SocialIcon from "@/Components/SocialIcon.vue";
 import Navbar from "./Navigation/Navbar.vue";
 import SocialBox from "@/Components/SocialBox.vue";
 import Footer from "./Footer.vue";

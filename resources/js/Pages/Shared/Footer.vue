@@ -1,5 +1,21 @@
 <template>
-   <footer class="border border-fontLight rounded-2xl mt-4 lg:hidden text-fontLight flex justify-center items-center gap-6 py-2">
-   <span>Licencje</span>※<span>©2024 Marek Gacek</span>※ <span>Polityka Prywatności</span>
-   </footer>
-</template>※
+    <footer
+        class="lg:hidden flex flex-col sm:flex-row justify-center items-center sm:gap-6 mt-4 py-2 border border-primaryColor border-opacity-20 rounded-2xl text-fontLight"
+    >
+        <Link href="/licencje" class="opacity-60 hover:opacity-100 transition-opacity">Licencje</Link>
+        <span >※</span>
+        <a href="https://marekgacek.pl" target="_blank" class="opacity-60 hover:opacity-100 transition-opacity">©{{year}} Marek Gacek</a>
+        <span >※</span>
+        <Link href="/polityka_prywatnosci" class="opacity-60 hover:opacity-100 transition-opacity">Polityka Prywatności</Link>
+    </footer>
+</template>
+
+
+<script setup>
+
+import { Link } from '@inertiajs/vue3';
+
+const today = new Date()
+const year = today.getFullYear();
+
+</script>

@@ -1,7 +1,7 @@
 <template>
     <div
-        class="hamburger border border-primaryColor border-opacity-50 rounded-lg px-2 py-1 group hover:bg-primaryColor hover:bg-opacity-15 transition-colors z-50"
-        @click="toggle"
+        class="hamburger border border-primaryColor border-opacity-50 rounded-lg px-2 py-1 group hover:bg-primaryColor hover:bg-opacity-15 transition-colors z-50 "
+        @click="toggle" style="z-index: 1000000000000000"
     >
         <div class="bar1 group-hover:translate-y-1"></div>
         <div class="bar2"></div>

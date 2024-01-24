@@ -1,5 +1,5 @@
 <template>
-    <Layout :title="''" :img="'assets/images/dish.jpg'">
+    <Layout :title="'Craft Culinary'" :img="'assets/images/dish.jpg'">
     
 <HomeCard :href="'/menu'" :title="'Menu'" :img="'assets/images/main-small.jpg'"/>
 <HomeCard :href="'/rezerwacja'" :title="'Rezerwacja'" :img="'assets/images/reservation.jpg'"/>
