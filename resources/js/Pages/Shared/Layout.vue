@@ -6,7 +6,7 @@
             class="relative flex flex-col items-start justify-between lg:w-9/12 h-[96vh] lg:h-[full] rounded-2xl bg-cover bg-center bg-no-repeat"
             :style="`background-image: url('${img}');`"
         >
-
+       
        
             <Navbar class="mt-12 sm:ml-12 mx-auto" />
 
