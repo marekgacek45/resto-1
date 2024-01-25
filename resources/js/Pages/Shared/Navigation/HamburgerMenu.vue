@@ -4,9 +4,9 @@
         <div class="modal flex justify-center items-center flex-col gap-5">
           <span class="text-4xl text-fontLight opacity-60">※</span>
           <Link href="/menu" class="link">Menu</Link>
-          <Link href="/reservation" class="link">Reservation</Link>
-          <Link href="/about" class="link">About</Link>
-          <Link href="/contact" class="link">Contact</Link>
+          <Link href="/rezerwacja" class="link">Rezerwacja</Link>
+          <Link href="/o-nas" class="link">O nas</Link>
+          <Link href="/kontakt" class="link">Kontakt</Link>
           <span class="text-4xl text-fontLight opacity-60">※</span>
         </div>
       </div>

@@ -51,3 +51,6 @@ Route::get('/o-nas',function () {
 Route::get('/rezerwacja',function () {
     return inertia('ReserveTable');
 });
+Route::get('/kontakt',function () {
+    return inertia('Contact');
+});

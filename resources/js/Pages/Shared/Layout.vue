@@ -1,10 +1,10 @@
 <template>
     <main
-        class="relative flex flex-col lg:flex-row justify-between gap-4 lg:h-[96vh] min-w-full"
+        class="relative flex flex-col lg:flex-row  gap-4 lg:h-[96vh] min-w-full"
     >
         <div
-            class="relative flex flex-col items-start justify-between lg:w-9/12 h-[96vh] lg:h-[full] rounded-2xl bg-cover bg-center bg-no-repeat"
-            :style="`background-image: url('${img}');`"
+            class="relative flex flex-col items-start justify-between lg:w-9/12 h-[96vh] lg:h-[full] rounded-2xl bg-cover bg-center bg-no-repeat" 
+            :class='width' :style="`background-image: url('${img}');`"
         >
        
        
@@ -22,13 +22,11 @@
             </div>
             <SocialBox></SocialBox>
         </div>
-        <div
-            class="flex flex-col md:flex-row lg:flex-col lg:w-3/12 rounded-2xl "
-        >
+        
             <slot></slot>
-        </div>
+        
     </main>
-    <Footer/>
+    <Footer :visible="'lg:hidden'"/>
 </template>
 
 <script setup>
@@ -39,5 +37,6 @@ import Footer from "./Footer.vue";
 defineProps({
     title: String,
     img: String,
+    width:String
 });
 </script>
