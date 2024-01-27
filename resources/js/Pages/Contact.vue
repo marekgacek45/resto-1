@@ -20,7 +20,7 @@
                 >
                     <TitleHeading
                         :title="'Kontakt'"
-                        :custom-class="'lg:text-own xl:text-9xl'"
+                        :custom-class="'lg:text-own xl:text-9xl text-fontLight'"
                     />
                 </div>
             </template>
