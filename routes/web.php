@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -35,22 +36,25 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
 
 
 
-Route::get('/',function () {
+Route::get('/', function () {
     return inertia('Index');
 });
-Route::get('/menu',function () {
+Route::get('/menu', function () {
     return inertia('Menu');
 });
-Route::get('/o-nas',function () {
+Route::get('/o-nas', function () {
     return inertia('About');
 });
-Route::get('/rezerwacja',function () {
+Route::get('/rezerwacja', function () {
     return inertia('ReserveTable');
 });
-Route::get('/kontakt',function () {
+Route::post('/rezerwacja', [FormController::class, 'store']);
+
+
+Route::get('/kontakt', function () {
     return inertia('Contact');
 });

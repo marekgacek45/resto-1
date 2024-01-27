@@ -39,45 +39,50 @@
                         smakami i elegancją, jaką dla Was przygotowaliśmy.</span
                     >
 
-                    <form action="" class="mt-12">
+                    <form @submit.prevent="form.post('/rezerwacja')"   method="post" class="mt-12">
                         <Field>
-                            <Input
-                                id="name"
+                            <input  class=" text-black w-full border-2  border-primaryColor rounded-xl focus:border-secondaryColor"   id="name"
                                 type="text"
                                 placeholder="Imię i Nazwisko"
-                                required
-                            />
+                                v-model="form.name"
+                                required/>
+                            
                         </Field>
                         <Field>
-                            <Input
+                            <input  class=" text-black w-full border-2  border-primaryColor rounded-xl focus:border-secondaryColor"
                                 id="email"
                                 type="email"
                                 placeholder="Email"
+                                v-model="form.email"
                                 required
                             />
                         </Field>
                         <Field>
-                            <Input
+                            <input  class=" text-black w-full border-2  border-primaryColor rounded-xl focus:border-secondaryColor"
                                 id="tel"
                                 type="tel"
                                 placeholder="Telefon"
+                                v-model="form.phone"
                                 required
                             />
                         </Field>
                         <Field>
-                            <Input
+                            <input  class=" text-black w-full border-2  border-primaryColor rounded-xl focus:border-secondaryColor"
                                 id="date"
                                 type="text"
                                 placeholder="Data oraz Godzina"
                                 onfocus="this.type='datetime-local'"
+                                v-model="form.date"
                                 required
                             />
+                           
                         </Field>
                         <Field>
-                            <TextArea
+                            <textarea rows="5" class=" text-black w-full border-2  border-primaryColor rounded-xl focus:border-secondaryColor"
                                 id="message"
                                 placeholder="Wiadomość"
-                            ></TextArea>
+                                v-model="form.message"
+                            ></textarea>
                         </Field>
 
                         <Field class="flex">
@@ -104,6 +109,15 @@ import Input from "@/components/Form/Input.vue";
 import TextArea from "@/components/Form/TextArea.vue";
 
 
+import { useForm } from "@inertiajs/vue3";
+
+const form = useForm({
+    name:'',
+    email:'',
+    phone:'',
+    date:'',
+    message:'',
+})
 
 
 
