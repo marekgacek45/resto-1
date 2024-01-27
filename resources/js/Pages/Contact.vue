@@ -8,10 +8,26 @@
         </Head>
 
         <Layout
-            :title="'Kontakt'"
+           
+            
             :img="'assets/images/dish.jpg'"
             :width="' lg:w-5/12 xl:w-6/12'"
         >
+
+        <template #navbar>
+                <Navbar class="mt-12 sm:ml-12 mx-auto" />
+            </template>
+
+            <template #titleContent>
+                <div
+                    class="mb-16 sm:mb-7 sm:ml-14 text-center sm:text-start md:w-1/2"
+                >
+                    <TitleHeading  :title="'Kontakt'" :customClass="'text-7xl sm:text-8xl lg:text-8xl mb-7 xl:mb-0'"/>
+                </div>
+            </template>
+
+            <template #mainContent>
+
             <div class="lg:w-7/12 xl:w-6/12 flex flex-col gap-2">
                 <div class="grid sm:grid-cols-2 grid-rows-2 w-full h-full gap-4">
                     <FrameBox
@@ -177,6 +193,7 @@
 
                 <Footer :customClass="'py-2 mt-2 hidden lg:flex'"></Footer>
             </div>
+        </template>
         </Layout>
     </div>
 </template>
@@ -188,4 +205,6 @@ import Footer from "./Shared/Footer.vue";
 import FrameBox from "@/Components/FrameBox.vue";
 import DayRow from "@/Components/DayRow.vue";
 import SocialIcon from "@/Components/SocialIcon.vue";
+import Navbar from "./Shared/Navigation/Navbar.vue";
+import TitleHeading from "./Shared/TitleHeading.vue";
 </script>
