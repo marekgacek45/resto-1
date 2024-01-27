@@ -6,9 +6,10 @@
         class="relative flex flex-col lg:flex-row gap-4 lg:h-[96vh] min-w-full"
     >
         <div
-            class="relative flex flex-col items-start justify-between lg:w-9/12 h-[96vh] lg:h-[full] rounded-2xl bg-cover bg-center bg-no-repeat"
-            :class="width"
-            :style="`background-image: url('${img}');`"
+            class="relative flex flex-col items-start justify-between  h-[96vh] lg:h-[full] rounded-2xl bg-cover bg-center bg-no-repeat"
+            :class="customClass"
+            
+            
         >
             <slot name="navbar"></slot>
 
@@ -30,6 +31,7 @@ defineProps({
     title: String,
     titleClass: String,
     img: String,
-    width: String,
+    customClass: String,
+    bgImage:String
 });
 </script>

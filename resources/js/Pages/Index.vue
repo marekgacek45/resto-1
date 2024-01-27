@@ -7,7 +7,7 @@
             />
         </Head>
 
-        <Layout  :img="'assets/images/dish.jpg'">
+        <Layout      :customClass="`lg:w-8/12 xl:w-9/12 bg-[url('assets/images/home-small.webp')] sm:bg-[url('assets/images/home-big.webp')] `">
             <template #navbar>
                 <Navbar class="mt-12 sm:ml-12 mx-auto" />
             </template>
@@ -22,7 +22,7 @@
             </template>
             <template #mainContent>
                 <div
-                    class="flex flex-col md:flex-row lg:flex-col lg:w-3/12 rounded-2xl"
+                    class="flex flex-col md:flex-row lg:flex-col lg:w-4/12 xl:3/12 rounded-2xl"
                 >
                     <HomeCard
                         :href="'/menu'"

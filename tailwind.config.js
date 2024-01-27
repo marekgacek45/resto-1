@@ -16,13 +16,16 @@ export default {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 heading: ["Forum", "serif"],
             },
-            colors:{
-                fontLight:'#efe7d2',
-                bgDark:'#0a0b0a',
-                primaryColor:'#efe7d2',
+            colors: {
+                fontLight: "#efe7d2",
+                bgDark: "#0a0b0a",
+                primaryColor: "#efe7d2",
             },
-            screens:{
-                'xs': '350px',
+            screens: {
+                xs: "350px",
+            },
+            fontSize:{
+                'own':"5rem"
             }
         },
     },
