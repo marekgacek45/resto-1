@@ -13,7 +13,7 @@ class FormController extends Controller
 
        $data =  $request->validated();
 
-       return 'ok';
+    //    return 'ok';
 
         // Mail::send('email-template', $data,
         //     function ($message) {
