@@ -1,6 +1,6 @@
 <template>
     <footer
-        class="flex flex-col sm:flex-row justify-center items-center sm:gap-6 mt-4 py-2 border border-primaryColor border-opacity-20 rounded-2xl text-fontLight" :class="visible"
+        class="flex flex-col sm:flex-row justify-center items-center sm:gap-6   border border-primaryColor border-opacity-20 rounded-2xl text-fontLight" :class="customClass"
     >
         <Link href="/licencje" class="opacity-60 hover:opacity-100 transition-opacity">Licencje</Link>
         <span >※</span>
@@ -14,7 +14,7 @@
 <script setup>
 
 defineProps({
-    visible:String
+    customClass:String
 })
 
 

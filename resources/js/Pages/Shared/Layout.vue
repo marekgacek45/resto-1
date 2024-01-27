@@ -26,7 +26,7 @@
             <slot></slot>
         
     </main>
-    <Footer :visible="'lg:hidden'"/>
+    <Footer :customClass="'lg:hidden mt-4 py-4'"></Footer>
 </template>
 
 <script setup>
