@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -40,21 +41,9 @@ require __DIR__ . '/auth.php';
 
 
 
-Route::get('/', function () {
-    return inertia('Index');
-});
-Route::get('/menu', function () {
-    return inertia('Menu');
-});
-Route::get('/o-nas', function () {
-    return inertia('About');
-});
-Route::get('/rezerwacja', function () {
-    return inertia('ReserveTable');
-});
+Route::get('/', [PagesController::class,'index']);
+Route::get('/menu', [PagesController::class,'menu']);
+Route::get('/o_nas', [PagesController::class,'about']);
+Route::get('/rezerwacja',[PagesController::class,'reservation']);
 Route::post('/rezerwacja', [FormController::class, 'store']);
-
-
-Route::get('/kontakt', function () {
-    return inertia('Contact');
-});
+Route::get('/kontakt', [PagesController::class,'contact']);
