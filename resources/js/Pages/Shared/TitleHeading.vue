@@ -1,7 +1,8 @@
 <template>
    
     <h1
-    class="bottom-36 font-heading font-semibold sm:font-medium text-7xl sm:text-8xl lg:text-9xl text-black uppercase" :class="customClass"
+    class="bottom-36 font-heading font-medium text-7xl sm:text-8xl lg:text-9xl  uppercase " :class="customClass"
+    style="text-shadow: 2px 2px 3px black;"
     >
 {{title}}
 </h1>

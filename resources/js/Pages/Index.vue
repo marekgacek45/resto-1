@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Head title=" Kulinarna Rozkosz">
+        <Head title=" Jedyne Takie Miejsce">
             <meta
                 name="description"
                 content="Zapraszamy do Craft Kitchen, gdzie kulinarna kreatywność spotyka się z tradycyjnym rzemiosłem. Każde danie jest unikalne, a smakowe kompozycje zaskakują nawet najbardziej wyrafinowane podniebienia."
@@ -16,7 +16,7 @@
                 <div
                     class="mb-16 sm:mb-7 sm:ml-14 text-center sm:text-start md:w-1/2"
                 >
-                    <TitleHeading :title="'Craft Kitchen'" />
+                    <TitleHeading :title="'Craft Kitchen'" custom-class="text-fontDark" />
                     <SocialBox></SocialBox>
                 </div>
             </template>
@@ -27,17 +27,17 @@
                     <HomeCard
                         :href="'/menu'"
                         :title="'Menu'"
-                        :img="'assets/images/main-small.jpg'"
+                        :img="'assets/images/home-1.webp'"
                     />
                     <HomeCard
                         :href="'/rezerwacja'"
                         :title="'Rezerwacja'"
-                        :img="'assets/images/reservation.jpg'"
+                        :img="'assets/images/home-2.webp'"
                     />
                     <HomeCard
                         :href="'/o-nas'"
                         :title="'Restauracja'"
-                        :img="'assets/images/restaurant.jpg'"
+                        :img="'assets/images/home-3.webp'"
                     />
                 </div>
             </template>

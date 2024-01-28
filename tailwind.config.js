@@ -19,8 +19,8 @@ export default {
             colors: {
                 fontLight: "#efe7d2",
                 fontLigtSecondary:"a8a6a1",
-                fontDark: "#000000",
-                bgDark: "#0a0b0a",
+                fontDark: "#161f28",
+                bgDark: "#161f28",
                 primaryColor: "#efe7d2",
                 secondaryColor: "#dabb67",
             },
