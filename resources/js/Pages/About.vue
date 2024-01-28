@@ -121,11 +121,7 @@ Niezmiernie ważne jest dla nas nie tylko zapewnienie wysokiej jakości i sprawd
 
 <script setup>
 import Layout from "./Shared/Layout.vue";
-import HomeCard from "@/Components/HomeCard.vue";
-import Footer from "./Shared/Footer.vue";
 import FrameBox from "@/Components/FrameBox.vue";
-// import DayRow from "@/Components/Contact/DayRow.vue";
-import SocialIcon from "@/Components/SocialIcon.vue";
 import Navbar from "./Shared/Navigation/Navbar.vue";
 import TitleHeading from "./Shared/TitleHeading.vue";
 import StarsBox from "@/Components/StarsBox.vue";
