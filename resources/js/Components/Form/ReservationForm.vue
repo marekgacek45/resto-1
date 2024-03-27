@@ -94,7 +94,7 @@ defineProps({ errors: Object })
 const sendForm = ref(false);
 
 const submitForm = () => {
-    form.post("/rezerwacja", {
+    form.post(route('contact'), {
         preserveScroll: true,
         onSuccess: () => {
             sendForm.value = !sendForm.value;

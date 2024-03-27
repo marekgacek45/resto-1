@@ -7,7 +7,7 @@
             />
         </Head>
 
-        <Layout      :customClass="`lg:w-8/12 xl:w-9/12 bg-[url('assets/images/home-small.webp')] sm:bg-[url('assets/images/home-big.webp')] `">
+        <Layout      :customClass="`lg:w-8/12 xl:w-9/12 bg-[url('/assets/images/home-small.webp')] sm:bg-[url('/assets/images/home-big.webp')] `">
             <template #navbar>
                 <Navbar class="mt-12 sm:ml-12 mx-auto" />
             </template>
@@ -27,17 +27,17 @@
                     <HomeCard
                         :href="'/menu'"
                         :title="'Menu'"
-                        :img="'assets/images/home-1.webp'"
+                        :img="'/assets/images/home-1.webp'"
                     />
                     <HomeCard
                         :href="'/rezerwacja'"
                         :title="'Rezerwacja'"
-                        :img="'assets/images/home-2.webp'"
+                        :img="'/assets/images/home-2.webp'"
                     />
                     <HomeCard
                         :href="'/o-nas'"
                         :title="'Restauracja'"
-                        :img="'assets/images/home-3.webp'"
+                        :img="'/assets/images/home-3.webp'"
                     />
                 </div>
             </template>

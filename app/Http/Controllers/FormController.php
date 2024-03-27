@@ -11,7 +11,12 @@ class FormController extends Controller
     public function store(ReservationRequest $request)
     {
 
-      $request->validated();
+       $validated = $request->validated();
+
+       
+
+    
+  
 
     }
 }

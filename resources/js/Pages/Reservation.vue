@@ -8,7 +8,7 @@
         </Head>
 
         <Layout
-            :customClass="`lg:w-7/12 xl:w-7/12 bg-[url('assets/images/reservation-small.webp')] sm:bg-[url('assets/images/reservation-big.webp')]  `"
+            :customClass="`lg:w-7/12 xl:w-7/12 bg-[url('/assets/images/reservation-small.webp')] sm:bg-[url('/assets/images/reservation-big.webp')]  `"
         >
             <template #navbar>
                 <Navbar class="mt-12 sm:ml-12 lg:ml-4 xl:ml-12 mx-auto" />

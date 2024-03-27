@@ -4,7 +4,7 @@
     /></Link>
 
     <Link href="/menu" class="uppercase hidden sm:block nav__link"> Menu </Link>
-    <Link href="/o_nas" class="uppercase hidden sm:block nav__link">
+    <Link href="/o-nas" class="uppercase hidden sm:block nav__link">
         O nas
     </Link>
     <Link

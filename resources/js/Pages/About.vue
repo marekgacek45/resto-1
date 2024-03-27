@@ -8,7 +8,7 @@
         </Head>
 
         <Layout
-            :customClass="`bg-[url('assets/images/about-small.webp')] sm:bg-[url('assets/images/about-big.webp')] bg-gray-300 bg-blend-multiply lg:w-5/12 xl:w-6/12`"
+            :customClass="`bg-[url('/assets/images/about-small.webp')] sm:bg-[url('/assets/images/about-big.webp')] bg-gray-300 bg-blend-multiply lg:w-5/12 xl:w-6/12`"
         >
             <template #navbar>
                 <Navbar class="mt-12 sm:ml-12 lg:ml-4 xl:ml-12 mx-auto" />
